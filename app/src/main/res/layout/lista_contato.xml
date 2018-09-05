@@ -15,12 +15,12 @@
         android:paddingTop="8dp"
         android:text="Mariana Silva"
         android:textColor="@android:color/black"
-        android:textSize="18sp"></TextView>
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/tv_email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:paddingBottom="8dp"
         android:paddingLeft="8dp"

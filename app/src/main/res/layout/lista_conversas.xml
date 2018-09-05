@@ -15,7 +15,7 @@
         android:paddingTop="8dp"
         android:text="Mariana Silva"
         android:textColor="@android:color/black"
-        android:textSize="18sp"></TextView>
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/tv_texto_conversa"
