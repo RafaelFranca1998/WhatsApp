@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.ValidadorActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/largura_logo"
+        android:layout_height="@dimen/altura_logo"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/validacao"
+        android:textColor="@color/branco"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_validacao"
+        android:textColor="@color/branco"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <EditText
+        android:id="@+id/edit_code_validacao"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite o Codigo!"
+        android:inputType="number"
+        android:textColor="@color/branco"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <Button
+        android:id="@+id/bt_validar"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/validar"
+        android:textColor="@color/branco"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+</android.support.constraint.ConstraintLayout>

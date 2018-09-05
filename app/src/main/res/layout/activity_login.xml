@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+
+<RelativeLayout
+    android:gravity="center_vertical|center_horizontal"
+    android:background="@color/colorPrimary"
+    tools:context="com.cursoandroid.whatsapp.whatsapp.activity.LoginActivity"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:background="@drawable/logo"
+        android:layout_height="@dimen/altura_logo"
+        android:layout_width="@dimen/largura_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/imageView"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/edit_login_email"
+        android:hint="Digite seu e-mail"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView"
+        android:ems="10"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/edit_login_senha"
+        android:hint="Digite sua senha"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edit_login_email"
+        android:ems="10"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/bt_logar"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edit_login_senha"
+        android:theme="@style/botaoPadrao"
+        android:text="@string/botao_logar"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:layout_below="@+id/bt_logar"
+        android:text="@string/texto_cadastre"
+        android:onClick="abrirCadastroUsuario"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+</RelativeLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--tools:context=".activity.LoginActivity">-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/image_logo"-->
+        <!--android:layout_width="@dimen/largura_logo"-->
+        <!--android:layout_height="@dimen/altura_logo"-->
+        <!--android:layout_marginStart="92dp"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:layout_x="97dp"-->
+        <!--android:layout_y="51dp"-->
+        <!--android:contentDescription="@string/logo_whatsapp"-->
+        <!--android:src="@drawable/logo"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/edit_login_email"-->
+        <!--android:layout_width="360dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="244dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="@string/digite_seu_e_mail"-->
+        <!--android:inputType="textEmailAddress"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.5"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/edit_login_senha"-->
+        <!--android:layout_width="358dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="2dp"-->
+        <!--android:layout_marginTop="17dp"-->
+
+        <!--android:ems="10"-->
+        <!--android:hint="@string/digite_sua_senha"-->
+        <!--android:inputType="textPassword"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/edit_login_email" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/bt_logar"-->
+        <!--android:layout_width="315dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:text="@string/logar"-->
+        <!--android:theme="@style/botaoPadrao"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.5"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/edit_login_senha" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/texto_cadastre"-->
+        <!--android:textColor="@color/branco"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/bt_logar"-->
+        <!--android:onClick="abrirCadastroUsuario"/>-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
